@@ -26,6 +26,10 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id]) #копируем по факту def show, чтобы отобразить все атрибуты сущности, которые придется редактировать 
   end
 
+  def update
+    @article = Article.find(params[:id]) #тоже что для edit
+  end
+
   private
 
   def article_params
