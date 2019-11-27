@@ -27,6 +27,12 @@ class ArticlesController < ApplicationController
 
   def update
     @article = Article.find(params[:id]) #тоже что для edit
+
+      if @article.update(article_params)
+        redirect_to @article
+      else
+        render action: 'edit'
+      end 
   end
 
   private
