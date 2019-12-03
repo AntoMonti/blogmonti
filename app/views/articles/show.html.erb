@@ -3,6 +3,16 @@
 	<%= @article.text %>
 </p>
 
+<h5>Comments</h5>
+
+<% @article.comments.each do |comment| %>
+	<p>
+		<i><%= comment.author %> said: </i></br>
+		<b><%= comment.body %> message: </b>
+	</p>
+<% end %>
+
+<h5>Add Comment<h5>
 	<p>
 		<%= form_for([@article, @article.comments.build]) do |f| %>
 	</p>
