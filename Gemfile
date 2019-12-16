@@ -52,7 +52,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Use for autorization
 gem 'devise'
 
-# For invironment by testing
+# Adds support system testing from Pushkin Roman
 group :test, :development do
   gem 'rspec-rails'
   gem 'shoulda-matchers'
