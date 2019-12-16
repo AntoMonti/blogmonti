@@ -52,9 +52,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Use for autorization
 gem 'devise'
 
-# For environment of testing
-group :test :development do
-  gem 'rspec-rails'
-  gem 'shoulda-matchers'
-  gem 'capybara'
-end
+
