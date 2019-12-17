@@ -16,4 +16,9 @@ describe Article do
       expect(article.subject).to eq 'Kiki'
     end
   end
+
+  describe "#last_comment" do
+    it "returns the last comment" do
+    end
+  end
 end
