@@ -1,6 +1,7 @@
 class Article < ApplicationRecord
   validates :title, presence: true
   validates :text, presence: true
+  validates :subtext, presence: true
 
   has_many :comments
 
