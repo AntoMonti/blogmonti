@@ -52,6 +52,11 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Use for autorization
 gem 'devise'
 
+group :production do  
+  #Add PostgreSQL
+  gem 'pg'
+end
+
 # Adds support system testing from Pushkin Roman
 group :test, :development do
   gem 'rspec-rails'
