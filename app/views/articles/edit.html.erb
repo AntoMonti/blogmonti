@@ -2,6 +2,12 @@
 
 <%= form_for :article, url: article_path(@article), method: :put do |f| %>
 <div class="field">
+
+	<p>
+		<%= f.label :image %><br/>
+		<%= f.file_field :image %>
+	</p>
+	
 	<p>
 		<%= f.label :title %><br/>
 		<%= f.text_field :title %>
